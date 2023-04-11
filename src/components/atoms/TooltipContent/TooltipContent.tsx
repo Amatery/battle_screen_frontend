@@ -38,7 +38,7 @@ export function TooltipContent({
         disabled={activeFriendRequest}
         ghost
       >
-        {!activeFriendRequest ? 'Send Friend Request' : 'Friend Request pending'}
+        {!activeFriendRequest ? 'Send Friend Request' : 'Friend Request Pending'}
       </Button>
     </div>
   )
