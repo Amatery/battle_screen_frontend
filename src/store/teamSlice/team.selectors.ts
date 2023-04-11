@@ -13,3 +13,8 @@ export const isFriendRequestLoading = (state: RootState): boolean => {
 export const winnerTeam = (state: RootState): string => {
   return state.teams.winnerTeam
 }
+
+
+export const isTeamsLoading = (state: RootState): boolean => {
+  return state.teams.isTeamsLoading
+}
