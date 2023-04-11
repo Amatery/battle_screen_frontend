@@ -15,7 +15,6 @@ interface ITooltipContentProps {
 
 export function TooltipContent({
   id,
-  nickname,
   kills,
   deaths,
   activeFriendRequest,
