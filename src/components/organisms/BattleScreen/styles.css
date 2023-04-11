@@ -1,0 +1,16 @@
+.battle-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.teams-container {
+    display: flex;
+}
+
+.team {
+    margin: 0 10px;
+    width: 400px;
+}

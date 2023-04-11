@@ -1,0 +1,23 @@
+.tooltip-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip-container > span {
+    padding-bottom: 5px;
+}
+
+.tooltip-container .ant-btn:disabled {
+    border: 1px solid green !important;
+}
+
+.friend-request-button {
+    margin-bottom: 5px;
+}
+
+
+.friend-request-button:disabled span {
+    color: green;
+}
