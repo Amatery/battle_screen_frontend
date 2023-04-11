@@ -8,3 +8,8 @@ export const teamsSelector = (state: RootState): ITeamsList => {
 export const isFriendRequestLoading = (state: RootState): boolean => {
   return state.teams.isFriendRequestPending
 }
+
+
+export const winnerTeam = (state: RootState): string => {
+  return state.teams.winnerTeam
+}

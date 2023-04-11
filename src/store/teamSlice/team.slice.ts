@@ -11,6 +11,7 @@ export interface IPlayerState {
   teamsList: ITeamsList
   isTeamsLoading: boolean
   isFriendRequestPending: boolean
+  winnerTeam: string
 }
 
 const initialState: IPlayerState = {
@@ -20,6 +21,7 @@ const initialState: IPlayerState = {
   },
   isTeamsLoading: false,
   isFriendRequestPending: false,
+  winnerTeam: '',
 }
 
 const teamsSlice = createSlice({
@@ -32,6 +34,9 @@ const teamsSlice = createSlice({
     })
     addCase(getTeams.fulfilled, (state: IPlayerState, { payload }) => {
       state.teamsList = { ...state.teamsList, ...payload.teams }
+      const checkTeamOne = state.teamsList.firstTeam.filter(player => player.state === 'dead').length
+      const checkTeamTwo = state.teamsList.secondTeam.filter(player => player.state === 'dead').length
+      state.winnerTeam = checkTeamOne > checkTeamTwo ? 'Team 1' : 'Team 2'
       state.isTeamsLoading = false
     })
     addCase(getTeams.rejected, (state: IPlayerState) => {

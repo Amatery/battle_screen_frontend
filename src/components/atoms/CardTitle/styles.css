@@ -1,0 +1,14 @@
+.card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-status.won {
+    color: green;
+}
+
+.team-status.lose {
+    color: red;
+}
