@@ -23,7 +23,6 @@ export function TooltipContent({
   const dispatch = useAppDispatch()
   const isLoading = useAppSelector(isFriendRequestLoading)
   const handleFriendRequest = (): void => {
-    // alert(`Friend request sent to ${nickname}`)
     dispatch(PutFriend({
       id,
       activeFriendRequest: true,
