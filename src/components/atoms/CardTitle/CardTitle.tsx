@@ -6,10 +6,10 @@ interface ICardTitleProps {
   status: string
 }
 
-export const CardTitle = ({
+function CardTitle({
   title,
   status,
-}: ICardTitleProps): ReactElement => {
+}: ICardTitleProps): ReactElement {
   return (
     <div className='card-title'>
       <span>{title}</span>
@@ -17,3 +17,5 @@ export const CardTitle = ({
     </div>
   )
 }
+
+export default CardTitle

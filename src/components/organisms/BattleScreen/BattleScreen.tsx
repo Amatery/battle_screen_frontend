@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from '../../../hooks/appHooks'
 import { teamsSelector, winnerTeam } from '../../../store/teamSlice/team.selectors'
 import { getTeams } from '../../../store/teamSlice/team.thunks'
 import { IPlayer } from '../../../types/types'
-import { CardTitle } from '../../atoms/CardTitle/CardTitle'
+import CardTitle from '../../atoms/CardTitle/CardTitle'
 import Player from '../../molecules/Player/Player'
 import './styles.css'
 

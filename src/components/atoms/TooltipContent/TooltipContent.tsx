@@ -13,7 +13,7 @@ interface ITooltipContentProps {
   activeFriendRequest: boolean
 }
 
-export function TooltipContent({
+function TooltipContent({
   id,
   kills,
   deaths,
@@ -43,3 +43,5 @@ export function TooltipContent({
     </div>
   )
 }
+
+export default TooltipContent

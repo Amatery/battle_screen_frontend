@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import { Tooltip } from 'antd'
-import { TooltipContent } from '../../atoms/TooltipContent/TooltipContent'
 import './styles.css'
+import TooltipContent from '../../atoms/TooltipContent/TooltipContent'
 
 interface IPlayerProps {
   _id: string;
